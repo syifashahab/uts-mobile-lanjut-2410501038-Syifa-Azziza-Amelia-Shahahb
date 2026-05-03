@@ -89,6 +89,16 @@ Aplikasi ini menggunakan **Context API** untuk mengelola data favorit agar dapat
 ## Refleksi
 Aplikasi ini membantu saya memahami konsep React Native seperti navigation, state management, dan konsumsi API. Selain itu, saya belajar bagaimana mengelola data global menggunakan Context API serta menangani error handling dan validasi input pada aplikasi mobile. Tantangan terbesar adalah mengatur struktur navigation agar antar halaman dapat saling terhubung dengan baik, namun hal tersebut membantu saya memahami arsitektur aplikasi mobile secara lebih mendalam.
 
+---
+
+## Referensi
+
+- Open Library API: https://openlibrary.org/
+- Expo Documentation: https://docs.expo.dev/
+- React Native Documentation: https://reactnative.dev/
+- React Navigation: https://reactnavigation.org/
+- React Context API: https://react.dev/reference/react/useContext
+
 ## 🚀 Cara Install & Menjalankan Project
 
 1. Clone repository
