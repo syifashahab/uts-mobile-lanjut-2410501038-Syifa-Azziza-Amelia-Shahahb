@@ -1,50 +1,99 @@
-# Welcome to your Expo app 👋
+# BookShelf App - UTS Pemrograman Mobile Lanjut
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+---
 
-## Get started
+## Identitas
+- Nama: Syifa Azziza Amelia Shahab  
+- NIM: 2410501038  
+- Kelas: A  
+- Mata Kuliah: Pemrograman Mobile Lanjut  
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## Tema Aplikasi
+BookShelf App adalah aplikasi mobile berbasis React Native yang digunakan untuk menampilkan daftar buku, melihat detail buku, mencari buku, serta menyimpan buku ke dalam daftar favorit pengguna.
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## Tech Stack
+- React Native (Expo)
+- React Navigation (Stack & Bottom Tab Navigation)
+- Context API (State Management)
+- Open Library API
+- JavaScript (ES6)
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## API yang Digunakan
+- Open Library API  
+- Endpoint: https://openlibrary.org/search.json  
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Credit API
+Data provided by Open Library API (https://openlibrary.org)
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## Fitur Aplikasi
 
-```bash
-npm run reset-project
-```
+- 📖 Home: Menampilkan daftar buku
+- 🔍 Search: Pencarian buku (minimal 3 karakter)
+- 📄 Detail: Menampilkan detail buku lengkap
+- ❤️ Favorite: Menyimpan & menghapus buku favorit
+- 👤 About: Informasi mahasiswa + credit API
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## Screenshots
 
-To learn more about developing your project with Expo, look at the following resources:
+### Home
+![Home](./screenshots/home.jpeg)
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### Detail
+![Detail](./screenshots/detail.jpeg)
 
-## Join the community
+### Favorite (Empty State)
+![Favorite Empty](./screenshots/favorite-empty.jpeg)
 
-Join our community of developers creating universal apps.
+### Favorite (With Data)
+![Favorite](./screenshots/favorite.jpeg)
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### Search Page
+![Search](./screenshots/search.jpeg)
+
+### Search (Result)
+![Search Result](./screenshots/search-result.jpeg)
+
+### About
+![About](./screenshots/about.jpeg)
+
+---
+
+## Video Demo
+Link video:
+https://drive.google.com/file/d/1Vb60rT3IP84IfM8BeFejzTLCcigZPzX7/view?usp=drivesdk
+
+---
+
+## State Management
+Aplikasi ini menggunakan **Context API** untuk mengelola data favorit agar dapat diakses di seluruh halaman tanpa props drilling.
+
+---
+
+## Error Handling
+- Jika data tidak tersedia akan muncul pesan "No books loaded"
+- Validasi search minimal 3 karakter
+- Input kosong pada search tidak diproses
+
+---
+
+## Refleksi
+Aplikasi ini membantu saya memahami konsep React Native seperti navigation, state management, dan konsumsi API. Selain itu, saya belajar bagaimana mengelola data global menggunakan Context API serta menangani error handling dan validasi input pada aplikasi mobile. Tantangan terbesar adalah mengatur struktur navigation agar antar halaman dapat saling terhubung dengan baik, namun hal tersebut membantu saya memahami arsitektur aplikasi mobile secara lebih mendalam.
+
+## 🚀 Cara Install & Menjalankan Project
+
+1. Clone repository
+```bash id="clone"
+git clone https://github.com/username/uts-mobile-lanjut.git
+cd uts-mobile-lanjut
+npm install
+npx expo start
